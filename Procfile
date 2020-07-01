@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath excelcombineonline excelcombineonline.wsgi
+web: python app.py
