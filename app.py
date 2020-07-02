@@ -50,7 +50,6 @@ def Upload_Stream(msg):
 	f = open(filename, "wb")
 	f.write(binary)
 	f.close()
-	print ("write" + filename)
 	# socketio.emit('ImageStream', {'data': str(encoded_string, encoding = "utf-8")})
 
 
@@ -106,5 +105,5 @@ def Clear_History(msg):
 		except:
 			pass
 if __name__ == "__main__":
-	app.run()
+	app.run(host='0.0.0.0',port='8000')
 	socketio.run(app,debug=True)
