@@ -50,6 +50,7 @@ def Upload_Stream(msg):
 	f = open(filename, "wb")
 	f.write(binary)
 	f.close()
+	print ("write" + filename)
 	# socketio.emit('ImageStream', {'data': str(encoded_string, encoding = "utf-8")})
 
 
