@@ -13,7 +13,7 @@
 
 var socket;
 $(document).ready(function(){
-	socket = io.connect();
+	socket = io.connect('https://excelcombine.herokuapp.com');
 	
 	socket.on('Combine_Response', function(msg) {
 		alert("合併完成");
