@@ -107,4 +107,4 @@ def Clear_History(msg):
 			pass
 if __name__ == "__main__":
 	app.run()
-	socketio.run(app)
+	socketio.run(app,debug=True)
